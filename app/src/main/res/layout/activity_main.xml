@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:background="@drawable/pic"
+            android:gravity="center"
+            android:text="Телефонная книга"
+            android:textSize="40sp"
+            android:textStyle="bold | italic"
+            android:textColor="#000000"/>
+
+        <Button
+            android:layout_marginTop="5pt"
+            android:id="@+id/button"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/button"
+            android:text="Добавить новую запись"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+        <Button
+            android:onClick = "delete1"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/button"
+            android:text="Удалить запись"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+        <Button
+            android:onClick = "drop_table"
+            android:id="@+id/button3"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/button"
+            android:text="Очистить список"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:textColor="#000000"/>
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:background="@drawable/pic"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:text="Добавление новой записи в телефонную книгу"
+            android:textStyle="bold | italic"
+            android:textColor="#000000"
+            android:gravity="center"
+            android:textSize="30sp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"/>
+        <TextView
+            android:paddingTop="15dp"
+            android:textStyle="italic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Введите имя"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"/>
+        <EditText
+            android:layout_marginTop="5pt"
+            android:id="@+id/name"
+            android:gravity="center"
+            android:background="@drawable/edittext"
+            android:layout_width="match_parent"
+            android:layout_height="30dp" />
+        <TextView
+            android:paddingTop="15dp"
+            android:textStyle="italic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Введите фамилию"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"/>
+        <EditText
+            android:layout_marginTop="5pt"
+            android:background="@drawable/edittext"
+            android:id="@+id/surname"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:gravity="center"/>
+        <TextView
+            android:paddingTop="15dp"
+            android:textStyle="italic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Введите отчество"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"/>
+        <EditText
+            android:layout_marginTop="5pt"
+            android:background="@drawable/edittext"
+            android:id="@+id/name3"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:gravity="center"/>
+        <TextView
+            android:paddingTop="15dp"
+            android:textStyle="italic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Введите номер телефона"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"/>
+        <EditText
+            android:layout_marginTop="5pt"
+            android:background="@drawable/edittext"
+            android:inputType="number"
+            android:id="@+id/number"
+            android:layout_width="match_parent"
+            android:layout_height = "30dp"
+            android:gravity="center"/>
+        <TextView
+            android:paddingTop="15dp"
+            android:textStyle="italic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Введите адрес электронной почты"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"/>
+        <EditText
+            android:layout_marginTop="5pt"
+            android:background="@drawable/edittext"
+            android:id="@+id/mail"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:gravity="center"/>
+        <Button
+            android:layout_marginTop="10pt"
+            android:background="@drawable/button"
+            android:onClick = "save"
+            android:id="@+id/button1"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            android:layout_width="350dp"
+            android:layout_height="60dp"
+            android:text="Добавить"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:layout_gravity="center"/>
+        <Button
+            android:background="@drawable/button"
+            android:onClick = "back"
+            android:id="@+id/button2"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            android:layout_width="350dp"
+            android:layout_height="60dp"
+            android:text="Назад"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
